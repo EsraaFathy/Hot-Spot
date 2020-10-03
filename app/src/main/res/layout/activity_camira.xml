@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A66E6E6E"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context=".Camira">
+
+    <ImageView
+        android:background="#fff"
+        android:id="@+id/camiraViev"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="bottom|center"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/camira"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/camira"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|center"
+        android:padding="15dp"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/camiraViev" />
+</LinearLayout>

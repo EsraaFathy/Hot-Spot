@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AB6E6E6E"
+    tools:context=".HelpActivity">
+    <Toolbar
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#6E6E6E"
+        android:title="Get a Help"
+        android:titleTextColor="#FFFFFF"
+        android:titleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:id="@+id/toolbar"/>
+
+    <TextView
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:padding="20dp"
+        android:background="#E4A3EF"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:fontFamily="serif-monospace"
+        android:id="@+id/Shelters"
+        android:text="Shelters"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:src="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:layout_marginVertical="10dp"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:padding="20dp"
+        android:background="#A3CCEF"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:id="@+id/Hospitals"
+        android:text="Hospitals"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Shelters"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <ImageView
+        android:paddingVertical="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_hospital"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Shelters"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_marginVertical="10dp"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:padding="20dp"
+        android:background="#B7EFA3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:id="@+id/FireFighters"
+        android:text="Fire Fighters"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hospitals"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:src="@drawable/fighters"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Hospitals"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_marginVertical="10dp"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:padding="20dp"
+        android:background="#EFA3A3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="Help!"
+        android:id="@+id/help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FireFighters"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:src="@drawable/live_help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FireFighters"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
